@@ -4,11 +4,19 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-Welcome to the StoryQuest template, where you'll learn how to mod elements of each scene and create your own StoryQuest! Let's start with the intro.
-In the Godot FileSystem, find the intro folder and double-click on the intro dialogue file to edit the text.
-Press enter to add a new line. Each line becomes a new dialogue box in-game.
-Select Cinematic node; drag your StoryQuest dialogue to the "Dialogue" field in the Inspector.
-Set the next scene using the "Next Scene" field in the Inspector.
+Narrador: Año 2147.
+Narrador: El Proyecto "Chronos" fue creado para explorar los límites del tiempo.
+Narrador: Durante una prueba experimental, algo salió mal.
+Narrador: Una fractura temporal se abrió sobre la Tierra y liberó una entidad que existía antes de la historia, antes de la humanidad y quizás antes del propio tiempo.
+Narrador: Los científicos la llamaron "El Observador".
+Narrador: Desde entonces, las épocas comenzaron a mezclarse.
+Narrador: Civilizaciones antiguas, futuros imposibles y realidades olvidadas colisionaron en un mismo mundo.
+Narrador: Solo existe una persona capaz de arreglar todo el desastre, tú.
+Narrador: Tu misión es recuperar los tres Núcleos Temporales dispersos a través de distintas eras y cerrar la fractura antes de que toda la existencia desaparezca.
+El Observador: "El tiempo es una ilusión."
+El Observador: "He visto nacer y morir universos."
+El Observador: "No puedes detener lo inevitable."
+Narrador: La primera señal del Núcleo proviene del Antiguo Egipto.
 do animation_player.play(&"walk_off")
-Explore other elements to mod, like the placeholder image, tile map, and animation options for this scene!
+Narrador: Tu viaje comienza ahora...
 => END
