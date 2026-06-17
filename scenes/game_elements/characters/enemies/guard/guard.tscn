@@ -14,7 +14,7 @@
 radius = 35.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nv25s"]
-radius = 15.0
+radius = 8.246211
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_nv25s"]
 light_mode = 1
@@ -242,12 +242,13 @@ offset = Vector2(377.88, 10.7686)
 script = ExtResource("4_lptvm")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DetectionArea" unique_id=1176393945]
-position = Vector2(-29.3333, -132)
-polygon = PackedVector2Array(302, 48, 283, 52, 279, 52, 101, 114, 98, 114, 79, 124, 77, 124, 72, 131, 71, 131, 71, 138, 78, 145, 78, 146, 95, 154, 95, 155, 275, 226, 275, 227, 292, 231, 292, 232, 312, 230, 316, 230, 330, 222, 332, 222, 340, 214, 341, 214, 346, 205, 347, 205, 351, 185, 351, 100, 347, 82, 347, 79, 338, 67, 338, 65, 325, 55, 325, 54, 302, 47)
+position = Vector2(-110, -40)
+rotation = 0.010125279
+polygon = PackedVector2Array(366, -30, 347, -26, 343, -26, 165, 36, 162, 36, 143, 46, 141, 46, 136, 53, 135, 53, 135, 60, 142, 67, 142, 68, 159, 76, 159, 77, 339, 148, 339, 149, 356, 153, 356, 154, 376, 152, 380, 152, 394, 144, 396, 144, 404, 136, 405, 136, 410, 127, 411, 127, 415, 107, 415, 22, 411, 4, 411, 1, 402, -11, 402, -13, 389, -23, 389, -24, 366, -31)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616054452]
 unique_name_in_owner = true
-position = Vector2(-1, 1)
+position = Vector2(20, -6)
 sprite_frames = ExtResource("5_mswbt")
 animation = &"walk"
 autoplay = "idle"

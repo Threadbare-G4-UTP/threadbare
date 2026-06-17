@@ -18,7 +18,7 @@
 [ext_resource type="Resource" uid="uid://cmd01vugyh1l" path="res://scenes/quests/story_quests/chronos_abyss/1_stealth/stealth_components/chronos_abyss_stealth.dialogue" id="16_pxudu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0efih"]
-size = Vector2(168.25, 122)
+size = Vector2(1, 1)
 
 [sub_resource type="Resource" id="Resource_xbkcq"]
 script = ExtResource("13_nslr0")

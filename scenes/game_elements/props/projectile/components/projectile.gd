@@ -137,7 +137,9 @@ func add_small_fx() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	add_small_fx()
 	duration_timer.start()
-
+	if body is TileMap or body.name == "TileMap" or body.is_in_group("walls"):
+		explode() 
+		return
 	# Logic for Fragile Barrel
 	# We must check for the specific subclass first because it inherits from FillingBarrel
 	if body.owner is FragileBarrel:
