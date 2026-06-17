@@ -168,37 +168,28 @@ walking_speed = 200.0
 [node name="Target" parent="OnTheGround" unique_id=1718603548 instance=ExtResource("13_s76l0")]
 position = Vector2(423, 89)
 sprite_frames = ExtResource("14_ce644")
-needed_amount = 1
-label = ""
-color = Color(0.62352943, 1, 0.654902, 1)
 
 [node name="Target2" parent="OnTheGround" unique_id=711725062 instance=ExtResource("13_s76l0")]
 position = Vector2(411, 584)
 sprite_frames = ExtResource("14_ce644")
 needed_amount = 1
 label = ""
-color = Color(0.62352943, 1, 0.654902, 1)
 
 [node name="Target3" parent="OnTheGround" unique_id=1832726000 instance=ExtResource("13_s76l0")]
 position = Vector2(1707, 1997)
 sprite_frames = ExtResource("14_ce644")
 needed_amount = 1
 label = ""
-color = Color(0.62352943, 1, 0.654902, 1)
 
 [node name="Target4" parent="OnTheGround" unique_id=857122250 instance=ExtResource("13_s76l0")]
 position = Vector2(2873, 1494)
 sprite_frames = ExtResource("14_ce644")
 needed_amount = 1
 label = ""
-color = Color(0.62352943, 1, 0.654902, 1)
 
 [node name="Target5" parent="OnTheGround" unique_id=1348280126 instance=ExtResource("13_s76l0")]
 position = Vector2(2863, 1991)
 sprite_frames = ExtResource("14_ce644")
-needed_amount = 1
-label = ""
-color = Color(0.62352943, 1, 0.654902, 1)
 
 [node name="CollectibleItem" parent="OnTheGround" unique_id=1864193206 instance=ExtResource("15_k7xts")]
 unique_name_in_owner = true
