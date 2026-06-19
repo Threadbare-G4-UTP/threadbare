@@ -275,30 +275,35 @@ position = Vector2(-4, 7)
 position = Vector2(807, 2979)
 collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
+needed_amount = 1
 color = Color(1, 1, 1, 1)
 
 [node name="Target2" parent="OnTheGround/TargetManager/Targets" unique_id=617381073 instance=ExtResource("30_5yf5h")]
 position = Vector2(1068, 2973)
 collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
+needed_amount = 1
 color = Color(1, 1, 1, 1)
 
 [node name="Target3" parent="OnTheGround/TargetManager/Targets" unique_id=287943664 instance=ExtResource("30_5yf5h")]
 position = Vector2(1318, 2976)
 collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
+needed_amount = 1
 color = Color(1, 1, 1, 1)
 
 [node name="Target4" parent="OnTheGround/TargetManager/Targets" unique_id=805648115 instance=ExtResource("30_5yf5h")]
 position = Vector2(1579, 2976)
 collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
+needed_amount = 1
 color = Color(1, 1, 1, 1)
 
 [node name="Target5" parent="OnTheGround/TargetManager/Targets" unique_id=1316512920 instance=ExtResource("30_5yf5h")]
 position = Vector2(1834, 2977)
 collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
+needed_amount = 1
 color = Color(1, 1, 1, 1)
 
 [node name="RepelPowerup" parent="OnTheGround/TargetManager" unique_id=297202740 instance=ExtResource("34_fxxx1")]
