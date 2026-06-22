@@ -207,6 +207,9 @@ func _update_player_awareness(delta: float) -> void:
 	if player_awareness.ratio >= 1.0:
 		state = State.ALERTED
 		player_detected.emit(_player)
+		
+		if _player and _player.has_method("defeat"):
+			_player.defeat()
 
 
 func _update_animation() -> void:
@@ -459,11 +462,18 @@ func _set_alert_other_sound_stream(new_value: AudioStream) -> void:
 
 
 func _on_instant_detection_area_body_entered(body: Node2D) -> void:
+	
+	if not body.has_method("defeat"):
+		return
+	
 	state = State.ALERTED
 	player_detected.emit(body)
 
-
+	body.defeat()
 func _on_detection_area_body_entered(body: Node2D) -> void:
+	if not body.has_method("defeat"):
+		return
+
 	_player = body
 	if _is_sight_to_point_blocked(body.global_position):
 		return
@@ -473,10 +483,10 @@ func _on_detection_area_body_entered(body: Node2D) -> void:
 	else:
 		state = State.DETECTING
 
-
 func _on_detection_area_body_exited(body: Node2D) -> void:
-	_player = null
-	last_seen_position = body.global_position
-	if state == State.DETECTING:
-		guard_movement.stop_moving()
-		state = State.INVESTIGATING
+	if body.has_method("defeat"): # Validamos que sea el jugador
+		_player = null
+		last_seen_position = body.global_position
+		
+		if state == State.DETECTING or state == State.ALERTED:
+			state = State.INVESTIGATING

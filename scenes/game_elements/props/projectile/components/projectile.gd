@@ -138,20 +138,28 @@ func _on_body_entered(body: Node2D) -> void:
 	add_small_fx()
 	duration_timer.start()
 
-	# Logic for Fragile Barrel
-	# We must check for the specific subclass first because it inherits from FillingBarrel
+	# 1. Primero revisamos si es un barril frágil
 	if body.owner is FragileBarrel:
 		body.owner.hit_by_droplet(label)
 		queue_free()
 		return
 
-	# Standard Logic for FillingBarrel
+	# 2. Luego revisamos si es un target/barril normal
 	if body.owner is FillingBarrel:
 		var filling_barrel: FillingBarrel = body.owner as FillingBarrel
 		if filling_barrel.label == label:
 			filling_barrel.increment()
-			queue_free()
+			explode() # Usamos explode para que deje animación al completarse
+			return
+		else:
+			# Si es un barril pero no coincide la letra/color, que explote igual
+			explode()
+			return
 
+	# 3. Al final de todo, si NO tocó ningún barril, vemos si fue una pared
+	if body is TileMap or body.name == "TileMap" or body.name == "Tilemap" or body.is_in_group("walls"):
+		explode() 
+		return
 
 ## Called from the Repel component when this body
 ## enters the repel area.

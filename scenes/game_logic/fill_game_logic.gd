@@ -39,6 +39,20 @@ func start() -> void:
 
 
 func _ready() -> void:
+	# Le decimos al código que espere a que todo el mapa esté completamente listo
+	if not is_node_ready():
+		await ready
+
+	# Ahora que todo el mapa existe de forma segura, buscamos y blindamos a los magos
+	var mago_dos: Node = get_parent().find_child("Throwin02gNPC2", true, false)
+	if mago_dos:
+		mago_dos.remove_from_group("throwing_enemy")
+		
+	var mago_tres: Node = get_parent().find_child("Throwing03gNPC3", true, false)
+	if mago_tres:
+		mago_tres.remove_from_group("throwing_enemy")
+
+	# Código original de tus compañeros (No se toca)
 	var filling_barrels: Array = get_tree().get_nodes_in_group("filling_barrels")
 	barrels_to_win = clampi(barrels_to_win, 0, filling_barrels.size())
 	for barrel: FillingBarrel in filling_barrels:
@@ -71,3 +85,17 @@ func _on_barrel_completed() -> void:
 	get_tree().call_group("throwing_enemy", "remove")
 	get_tree().call_group("projectiles", "remove")
 	goal_reached.emit()
+func _on_targets_nuevos_completed() -> void:
+	# Buscamos y eliminamos al segundo mago
+	var mago_dos: Node = get_parent().find_child("Throwin02gNPC2", true, false)
+	if mago_dos and mago_dos.has_method("remove"):
+		mago_dos.remove()
+	
+	# Buscamos y eliminamos al tercer mago
+	var mago_tres: Node = get_parent().find_child("Throwing03gNPC3", true, false)
+	if mago_tres and mago_tres.has_method("remove"):
+		mago_tres.remove()
+
+
+func _on_target_3_completed() -> void:
+	pass # Replace with function body.
