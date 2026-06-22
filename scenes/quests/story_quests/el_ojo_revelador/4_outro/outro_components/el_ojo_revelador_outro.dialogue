@@ -2,23 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 ~ start
 do GameState.add_collected_item(InventoryItem.with_type(InventoryItem.ItemType.SPIRIT))
-Jeremy, envuelto en polvo y con la ropa rota, mira salir el deslumbrante sol. 
-Por primera vez en su vida , no se siente apurado ni ansioso por lo que venga después. 
-Está disfrutando del silencio, el aire y la luz. El Ojo Revelador mostró su alma. le permitió 
-reconocer su ambición desenfrenada y comprender que los tesoros más valiosos no están ocultos 
-en templos... solo se hallan en uno mismo. Decidió dejar el fragmento del diamante en la cima 
-de una roca, como una señal de respeto.
 
+Los tres Núcleos Temporales han sido recuperados.
+La fractura comienza a cerrarse.
+Las épocas regresan lentamente a su lugar.
+Pero una última verdad sale a la luz.
+El responsable del experimento que provocó el desastre eras tú.
+En otra línea temporal.
+El Obzervador desaparece entre las grietas del tiempo.
+La historia puede continuar.
+El futuro aún no está escrito.
 
-Jeremy (pensativo): "Pasé toda mi vida buscando tesoros... pero nunca entendí que la verdadera 
-reliquia era el tiempo que dejé pasar."
-
-El aventurero mira el horizonte, dejando caer el fragmento del diamante sobre una roca.
-
-Jeremy: "Supongo que El Ojo cumplió su propósito... me mostró lo que realmente importa."
-
-Se da media vuelta, caminando hacia la selva mientras la luz del amanecer cubre el templo en ruinas.
-
-Y así, el explorador dejó atrás la sombra del templo. Ya no se dejará llevar por las riquezas... ahora buscará algo más profundo.
+FIN.
 
 => END
