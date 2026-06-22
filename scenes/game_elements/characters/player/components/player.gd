@@ -145,7 +145,7 @@ func _ready() -> void:
 	_set_mode(mode)
 	_set_sprite_frames(sprite_frames)
 	GameState.abilities_changed.connect(_on_abilities_changed)
-
+	GameState.clear_abilities()
 
 func _set_speeds(new_speeds: CharacterSpeeds) -> void:
 	speeds = new_speeds
@@ -191,6 +191,10 @@ func defeat(falling: bool = false) -> void:
 		return
 
 	mode = Player.Mode.DEFEATED
+	
+	# Parche seguro para evitar el aviso amarillo de mezcla de Strings
+	if has_node("AnimationPlayer"):
+		$AnimationPlayer.play(&"defeated", -1, 1.0, false)
 
 	# Stop moving the player.
 	velocity = Vector2.ZERO
