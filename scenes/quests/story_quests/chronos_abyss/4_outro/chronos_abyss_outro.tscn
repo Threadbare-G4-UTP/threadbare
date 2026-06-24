@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_78qp1"]
 [ext_resource type="TileSet" uid="uid://nonpg20d7mbj" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_exterior_floors.tres" id="2_58uqc"]
 [ext_resource type="Texture2D" uid="uid://beoea8bwkp303" path="res://scenes/quests/story_quests/chronos_abyss/4_outro/outro_components/images/labfinal.png" id="2_m1u4k"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="3_m1u4k"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="4_58uqc"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_ge2ip"]
 [ext_resource type="Resource" uid="uid://crblx7ihol7k6" path="res://scenes/quests/story_quests/chronos_abyss/4_outro/outro_components/chronos_abyss_outro.dialogue" id="5_rx8pp"]
 [ext_resource type="Script" uid="uid://bdhjixygupit1" path="res://scenes/game_elements/props/area_filler/area_filler.gd" id="6_t3vmx"]
@@ -50,7 +50,7 @@ y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=1142153150]
 position = Vector2(350, 480)
-sprite_frames = ExtResource("3_m1u4k")
+sprite_frames = ExtResource("4_58uqc")
 animation = &"idle"
 autoplay = "idle"
 

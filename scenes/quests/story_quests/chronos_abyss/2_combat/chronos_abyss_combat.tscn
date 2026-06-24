@@ -14,7 +14,7 @@
 [ext_resource type="SpriteFrames" uid="uid://dkf6l47tpkvrc" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abbys_the_observer.tres" id="11_0lvx6"]
 [ext_resource type="SpriteFrames" uid="uid://cxj27vxe8nssb" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/chronos_abyss_throwing_enemy.tres" id="11_mqk5t"]
 [ext_resource type="PackedScene" uid="uid://cfprtag1k5b56" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/chronos_abyss_projectile.tscn" id="12_0td2g"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="13_0lvx6"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/player_components/chronos_abyss_player.tres" id="13_0lvx6"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="13_s76l0"]
 [ext_resource type="SpriteFrames" uid="uid://dqtm115i66kvp" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/chronos_abyss_target_spriteframes.tres" id="14_ce644"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="15_k7xts"]
