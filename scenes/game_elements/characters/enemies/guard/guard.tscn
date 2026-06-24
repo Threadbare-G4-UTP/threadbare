@@ -249,6 +249,7 @@ polygon = PackedVector2Array(366, -30, 347, -26, 343, -26, 165, 36, 162, 36, 143
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616054452]
 unique_name_in_owner = true
 position = Vector2(20, -6)
+scale = Vector2(1.4, 1.4)
 sprite_frames = ExtResource("5_mswbt")
 animation = &"walk"
 autoplay = "idle"

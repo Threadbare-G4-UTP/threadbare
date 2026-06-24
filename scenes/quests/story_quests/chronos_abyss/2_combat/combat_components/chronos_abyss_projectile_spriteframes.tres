@@ -1,8 +1,8 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://biptpxogdkslu"]
 
-[ext_resource type="Texture2D" uid="uid://cagyo41xspko" path="res://assets/first_party/templates/combat/NO_EDIT_projectile.png" id="1_lybxq"]
+[ext_resource type="Texture2D" uid="uid://bsj7vjfbbd66o" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/enemies_components/projectile.png" id="1_lybxq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2hwo"]
 atlas = ExtResource("1_lybxq")
 region = Rect2(0, 0, 64, 64)
 
@@ -10,7 +10,7 @@ region = Rect2(0, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a6ony")
+"texture": SubResource("AtlasTexture_y2hwo")
 }],
 "loop": true,
 "name": &"default",

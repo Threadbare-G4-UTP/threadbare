@@ -21,6 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="18_0mlpf"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="18_5iqea"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="20_0l47r"]
+[ext_resource type="Texture2D" uid="uid://d231nntijj5xn" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/enemies_components/Diseño descanso2 -Sheet.png" id="22_lskac"]
+[ext_resource type="Texture2D" uid="uid://bbo26bayfw5a7" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/enemies_components/Diseño caminata2 -Sheet.png" id="23_74iqq"]
+[ext_resource type="Texture2D" uid="uid://cak3351fkboo3" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/enemies_components/Diseño ataque2 -Sheet.png" id="24_lskac"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fixil"]
 size = Vector2(1, 1)
@@ -29,6 +32,202 @@ size = Vector2(1, 1)
 script = ExtResource("16_oyddb")
 type = 1
 metadata/_custom_type_script = "uid://bgmwplmj3bfls"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61itj"]
+atlas = ExtResource("24_lskac")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lskac"]
+atlas = ExtResource("24_lskac")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ce644"]
+atlas = ExtResource("24_lskac")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7xts"]
+atlas = ExtResource("24_lskac")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyddb"]
+atlas = ExtResource("24_lskac")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kvm1"]
+atlas = ExtResource("22_lskac")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vduyk"]
+atlas = ExtResource("22_lskac")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vawq5"]
+atlas = ExtResource("22_lskac")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54mmq"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfukq"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_km2i6"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ph41d"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rvcb"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysrum"]
+atlas = ExtResource("23_74iqq")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3j4m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61itj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lskac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ce644")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7xts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyddb")
+}],
+"loop": true,
+"name": &"alerted",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kvm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vduyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vawq5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54mmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfukq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_km2i6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ph41d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rvcb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysrum")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74iqq"]
+atlas = ExtResource("24_lskac")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lvx6"]
+atlas = ExtResource("24_lskac")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqk5t"]
+atlas = ExtResource("24_lskac")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0td2g"]
+atlas = ExtResource("24_lskac")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s76l0"]
+atlas = ExtResource("24_lskac")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_74iqq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74iqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lvx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqk5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0td2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s76l0")
+}],
+"loop": true,
+"name": &"alerted",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kvm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vduyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vawq5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54mmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfukq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_km2i6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ph41d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rvcb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysrum")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
 
 [sub_resource type="Curve2D" id="Curve2D_0l47r"]
 _data = {
@@ -227,6 +426,7 @@ position = Vector2(2, -2)
 
 [node name="Guard01" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=689832587 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(1303, -84)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia01")
 wait_time = 0.5
 move_speed = 300.0
@@ -234,6 +434,7 @@ detection_area_scale = 0.7999999999999999
 
 [node name="Guard2" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=554192867 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(2673, 791)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia02")
 wait_time = 1.3
 move_speed = 550.0
@@ -241,6 +442,7 @@ detection_area_scale = 0.5
 
 [node name="Guard3" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=598451086 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(2403, 794)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia03")
 wait_time = 0.3
 move_speed = 500.0
@@ -248,6 +450,7 @@ detection_area_scale = 0.5
 
 [node name="Guard4" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=1457628806 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(1204, 415)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia04")
 wait_time = 0.7
 move_speed = 600.0
@@ -255,6 +458,7 @@ detection_area_scale = 0.7
 
 [node name="Guard5" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=1729703910 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(2159, 980)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia05")
 wait_time = 0.7
 move_speed = 550.0
@@ -263,6 +467,7 @@ detection_area_scale = 0.6
 
 [node name="Guard6" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=1891273892 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(-217, 1681)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia06")
 move_speed = 550.0
 time_to_detect_player = 0.6
@@ -270,6 +475,7 @@ detection_area_scale = 0.6
 
 [node name="Guard7" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=726428761 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(112, 433)
+sprite_frames = SubResource("SpriteFrames_74iqq")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia07")
 move_speed = 600.0
 time_to_detect_player = 0.6
@@ -277,6 +483,7 @@ detection_area_scale = 0.5
 
 [node name="Guard8" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=1084377856 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(1772, 1882)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia08")
 move_speed = 650.0
 time_to_detect_player = 0.6
@@ -284,6 +491,7 @@ detection_area_scale = 0.6
 
 [node name="Guard9" parent="OnTheGround/EnemyGuards/GuardiaPrimerPasillo" unique_id=1211664733 node_paths=PackedStringArray("patrol_path") instance=ExtResource("18_0mlpf")]
 position = Vector2(2772, 1587)
+sprite_frames = SubResource("SpriteFrames_p3j4m")
 patrol_path = NodePath("../../../Rutas_Guardias/Guardia09")
 wait_time = 1.6
 move_speed = 650.0
