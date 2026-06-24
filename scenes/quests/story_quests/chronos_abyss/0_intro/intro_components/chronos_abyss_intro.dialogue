@@ -2,10 +2,16 @@
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-do AnimationPlayer.play("intro_colapso")
-Narrador: Año 2147. Helix Corporation ha logrado lo impensable: rozar los límites del tiempo. Durante una expedición en ruinas subterráneas, el explorador Ethan Ward recupera una extraña gema ancestral.
-Dra. Elena Cross: Los sistemas de Helix están colapsando, Ethan. Esa gema... no pertenece a nuestra época. Proviene del Antiguo Egipto.
-Ethan Ward: ¿Qué fue lo que liberamos...? Los monitores están fallando...
-El Observador: El tiempo jamás les perteneció.
-Narrador: Una grieta temporal masiva se abre en el corazón del laboratorio. La anomalía absorbe a Ethan. Tu viaje al Templo de Anubis comienza ahora...
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+Año 2147.
+Un experimento temporal salió terriblemente mal.
+Una fractura en el tiempo abrió un portal hacia algo que jamás debió existir.
+Lo llaman El Observador.
+Una entidad antigua que ha permanecido oculta durante siglos observando cada civilización.
+Ahora las épocas se mezclan.
+Egipto, el Imperio Inca y el futuro colisionan en una sola realidad.
+Tu misión es recuperar los Núcleos Temporales antes de que el tiempo desaparezca para siempre.
+do animation_player.play(&"walk_off")
+El Observador te está esperando.
 => END
