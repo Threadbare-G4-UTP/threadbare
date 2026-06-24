@@ -13,6 +13,7 @@
 [ext_resource type="Resource" uid="uid://c10afgrfwcnfs" path="res://scenes/quests/story_quests/chronos_abyss/1_stealth/stealth_components/chronos_abyss_checkpoint.dialogue" id="10_rnjk4"]
 [ext_resource type="Texture2D" uid="uid://cx3hlsgotg8o5" path="res://scenes/quests/story_quests/chronos_abyss/1_stealth/stealth_components/portal.png" id="11_dkxh6"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="11_gkklq"]
+[ext_resource type="SpriteFrames" uid="uid://dkf6l47tpkvrc" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abbys_the_observer.tres" id="12_477vt"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="12_v784b"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="13_nslr0"]
 [ext_resource type="Resource" uid="uid://dspqvujcx4axm" path="res://scenes/quests/story_quests/chronos_abyss/1_stealth/stealth_components/chronos_abyss_collected.dialogue" id="14_x8i5o"]
@@ -182,6 +183,12 @@ dialogue = ExtResource("10_rnjk4")
 position = Vector2(-4, 6)
 shape = SubResource("RectangleShape2D_0efih")
 debug_color = Color(0, 0, 0, 0.42)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Checkpoints/Checkpoint" unique_id=534965326]
+light_mask = 0
+position = Vector2(-1193, 757)
+sprite_frames = ExtResource("12_477vt")
+animation = &"idle"
 
 [node name="Portal" type="Sprite2D" parent="." unique_id=1034416713]
 position = Vector2(285, 1078)

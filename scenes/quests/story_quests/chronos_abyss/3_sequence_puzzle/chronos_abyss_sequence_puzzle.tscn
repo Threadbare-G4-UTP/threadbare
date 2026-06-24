@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://dsmf1r5nlmiy8" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/chronos_abyss_projectile2.tscn" id="33_vp1co"]
 [ext_resource type="PackedScene" uid="uid://dmevaymmt6wco" path="res://scenes/game_elements/props/powerup/powerup.tscn" id="34_fxxx1"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="35_id6h8"]
+[ext_resource type="SpriteFrames" uid="uid://dkf6l47tpkvrc" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abbys_the_observer.tres" id="36_hqdw7"]
 [ext_resource type="SpriteFrames" uid="uid://c336183hprbh2" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_scientist_hologram.tres" id="38_5yf5h"]
 [ext_resource type="Texture2D" uid="uid://bjd0mvkj35l71" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/Diseño ataque3 -Sheet.png" id="38_vp1co"]
 [ext_resource type="Texture2D" uid="uid://dwamr5piyoyhs" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/Diseño descanso3 -Sheet.png" id="39_5yf5h"]
@@ -1356,6 +1357,11 @@ collision_mask = 256
 sprite_frames = ExtResource("31_hqdw7")
 needed_amount = 1
 color = Color(1, 1, 1, 1)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="OnTheGround/TargetManager/Targets/Target4" unique_id=1798645709]
+position = Vector2(2148, 1670)
+sprite_frames = ExtResource("36_hqdw7")
+animation = &"idle"
 
 [node name="Target5" parent="OnTheGround/TargetManager/Targets" unique_id=1316512920 instance=ExtResource("30_5yf5h")]
 position = Vector2(1834, 2977)
