@@ -1,12 +1,12 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-This scene includes objects that the player must tap in a particular sequence, and signs with clues on them.
-Select a "SequencePuzzleStep" node and change the array in the "Sequence" field.
-The first melody is set to yellow, green, blue. This means that you should tap those objects in that order.
-Can you guess the second sequence without looking at the Inspector?
+Ahora te encuentras en un futuro alternativo.
+En esta línea de tiempo la humanidad fue invadida por alienígenas conquistadores.
+Ahora mismo te encuentras en una de las naves de evacuación del planeta.
+Sin embargo, como puedes ver, a la humanidad no le fue muy bien en este escape, encuentra el tercer núcleo para arreglar este desastre.
 => END
 ~ well_done
-Well done! You can add more steps to the puzzle. Just remember to add them to the "SequencePuzzle" node, and add a new hint sign for each one.
-Using what you've learned so far, what kind of challenge can you create here? Have fun!
+Enhorabuena!
+Has hallado el último núcleo, volvamos al laboratorio en el presente.
 => END

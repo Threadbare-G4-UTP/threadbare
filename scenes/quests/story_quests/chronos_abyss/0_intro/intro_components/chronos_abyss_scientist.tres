@@ -1,3 +1,53 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://c5287x8k1bcwl"]
 
+[ext_resource type="Texture2D" uid="uid://dw2if4vu7t1l7" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/scientist_idle.png" id="1_w14as"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0r6iq"]
+atlas = ExtResource("1_w14as")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlf78"]
+atlas = ExtResource("1_w14as")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v2u3"]
+atlas = ExtResource("1_w14as")
+region = Rect2(384, 0, 192, 192)
+
 [resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r6iq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r6iq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r6iq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlf78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v2u3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v2u3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v2u3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlf78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r6iq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r6iq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
