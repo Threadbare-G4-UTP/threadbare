@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bx4t1sidgy60c" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/images/laboratoriointro.png" id="1_bhwfp"]
 [ext_resource type="TileSet" uid="uid://nonpg20d7mbj" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_exterior_floors.tres" id="1_xhyuy"]
 [ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://assets/first_party/templates/intro/NO_EDIT_intro_image.png" id="2_bhwfp"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="3_twrdp"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/player_components/chronos_abyss_player.tres" id="3_twrdp"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_mh1ik"]
 [ext_resource type="Resource" uid="uid://dkxm5tnc2ybil" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_intro.dialogue" id="5_jrbma"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_j0if7"]
