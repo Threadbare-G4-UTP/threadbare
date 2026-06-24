@@ -4,19 +4,14 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-Narrador: Año 2147.
-Narrador: El Proyecto "Chronos" fue creado para explorar los límites del tiempo.
-Narrador: Durante una prueba experimental, algo salió mal.
-Narrador: Una fractura temporal se abrió sobre la Tierra y liberó una entidad que existía antes de la historia, antes de la humanidad y quizás antes del propio tiempo.
-Narrador: Los científicos la llamaron "El Observador".
-Narrador: Desde entonces, las épocas comenzaron a mezclarse.
-Narrador: Civilizaciones antiguas, futuros imposibles y realidades olvidadas colisionaron en un mismo mundo.
-Narrador: Solo existe una persona capaz de arreglar todo el desastre, tú.
-Narrador: Tu misión es recuperar los tres Núcleos Temporales dispersos a través de distintas eras y cerrar la fractura antes de que toda la existencia desaparezca.
-El Observador: "El tiempo es una ilusión."
-El Observador: "He visto nacer y morir universos."
-El Observador: "No puedes detener lo inevitable."
-Narrador: La primera señal del Núcleo proviene del Antiguo Egipto.
+Año 2147.
+Un experimento temporal salió terriblemente mal.
+Una fractura en el tiempo abrió un portal hacia algo que jamás debió existir.
+Lo llaman El Observador.
+Una entidad antigua que ha permanecido oculta durante siglos observando cada civilización.
+Ahora las épocas se mezclan.
+Egipto, el Imperio Inca y el futuro colisionan en una sola realidad.
+Tu misión es recuperar los Núcleos Temporales antes de que el tiempo desaparezca para siempre.
 do animation_player.play(&"walk_off")
-Narrador: Tu viaje comienza ahora...
+El Observador te está esperando.
 => END
