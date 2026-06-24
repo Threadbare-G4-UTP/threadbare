@@ -1,3 +1,53 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://dkf6l47tpkvrc"]
 
+[ext_resource type="Texture2D" uid="uid://c50nbciqsdtcp" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/the_observer_idle.png" id="1_uednf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdj1e"]
+atlas = ExtResource("1_uednf")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_657jx"]
+atlas = ExtResource("1_uednf")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2r7u1"]
+atlas = ExtResource("1_uednf")
+region = Rect2(384, 0, 192, 192)
+
 [resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdj1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdj1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdj1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_657jx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r7u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r7u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r7u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_657jx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdj1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdj1e")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]

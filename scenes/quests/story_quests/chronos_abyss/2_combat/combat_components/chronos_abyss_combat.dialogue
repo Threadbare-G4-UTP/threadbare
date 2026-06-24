@@ -2,10 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+Ahora te encuentras en unas ruinas incaicas.
+Esquiva a tus enemigos y repele sus ataques para abrirte paso hasta el segundo núcleo.
 => END
 
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+Enhorabuena!
+Has recogido el segundo núcleo.
+Nos queda uno solo para ponerle fin a esta pesadilla.
 => END

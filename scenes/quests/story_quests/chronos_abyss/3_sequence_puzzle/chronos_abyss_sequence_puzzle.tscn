@@ -8,10 +8,10 @@
 [ext_resource type="TileSet" uid="uid://bupapudem6xxc" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_elevation_2.tres" id="5_3r142"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="5_dgn1q"]
 [ext_resource type="TileSet" uid="uid://k4hi88odhj6y" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_shadows.tres" id="5_jj7sd"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="6_o5yyn"]
 [ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="7_krl07"]
 [ext_resource type="PackedScene" uid="uid://b8sok264erfoc" path="res://scenes/game_elements/props/sequence_puzzle_object/sequence_puzzle_object.tscn" id="8_fg5k7"]
 [ext_resource type="SpriteFrames" uid="uid://dqxi3xlpx3o22" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/chronos_abyss_object.tres" id="9_jjg87"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="9_vp1co"]
 [ext_resource type="AudioStream" uid="uid://cg57q82pb243w" path="res://assets/third_party/nepalese_hand_bells/handBells-c4.ogg" id="10_hbb71"]
 [ext_resource type="AudioStream" uid="uid://b83x8h0ob5mpq" path="res://assets/third_party/nepalese_hand_bells/handBells-d4.ogg" id="11_n72nl"]
 [ext_resource type="AudioStream" uid="uid://cmtiwg2cylmts" path="res://assets/third_party/nepalese_hand_bells/handBells-e4.ogg" id="12_jj7sd"]
@@ -30,14 +30,16 @@
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="25_fib6x"]
 [ext_resource type="Script" uid="uid://cwfa7hdpo3ux1" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/target_manager.gd" id="26_id6h8"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="27_ssurr"]
-[ext_resource type="PackedScene" uid="uid://cfprtag1k5b56" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/chronos_abyss_projectile.tscn" id="29_vp1co"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="30_5yf5h"]
 [ext_resource type="SpriteFrames" uid="uid://dqtm115i66kvp" path="res://scenes/quests/story_quests/chronos_abyss/2_combat/combat_components/chronos_abyss_target_spriteframes.tres" id="31_hqdw7"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="32_vmbpp"]
+[ext_resource type="PackedScene" uid="uid://dsmf1r5nlmiy8" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/chronos_abyss_projectile2.tscn" id="33_vp1co"]
 [ext_resource type="PackedScene" uid="uid://dmevaymmt6wco" path="res://scenes/game_elements/props/powerup/powerup.tscn" id="34_fxxx1"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="35_id6h8"]
+[ext_resource type="SpriteFrames" uid="uid://c336183hprbh2" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_scientist_hologram.tres" id="38_5yf5h"]
 [ext_resource type="Texture2D" uid="uid://bjd0mvkj35l71" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/Diseño ataque3 -Sheet.png" id="38_vp1co"]
 [ext_resource type="Texture2D" uid="uid://dwamr5piyoyhs" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/Diseño descanso3 -Sheet.png" id="39_5yf5h"]
+[ext_resource type="Texture2D" uid="uid://cx3hlsgotg8o5" path="res://scenes/quests/story_quests/chronos_abyss/1_stealth/stealth_components/portal.png" id="40_5yf5h"]
 [ext_resource type="Texture2D" uid="uid://y4e1mqxdjfui" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/Diseño caminata3 -Sheet.png" id="40_vp1co"]
 
 [sub_resource type="Resource" id="Resource_yi2t4"]
@@ -1195,7 +1197,7 @@ y_sort_enabled = true
 
 [node name="Player" parent="OnTheGround" unique_id=747348360 instance=ExtResource("5_dgn1q")]
 position = Vector2(477, 574)
-sprite_frames = ExtResource("6_o5yyn")
+sprite_frames = ExtResource("9_vp1co")
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player" unique_id=1732237457]
 limit_left = -10000
@@ -1279,6 +1281,7 @@ sequence = [NodePath("../../Objects/Blue"), NodePath("../../Objects/Green"), Nod
 hint_sign = NodePath("../../Signs/HintSign2")
 
 [node name="CollectibleItem" parent="OnTheGround" unique_id=1678374994 instance=ExtResource("20_oswpl")]
+z_index = 1
 position = Vector2(5444, 2840)
 revealed = false
 next_scene = "uid://bwp825mrxv4f3"
@@ -1310,11 +1313,18 @@ distance = 57.0
 throwing_period = 2.5
 autostart = true
 sprite_frames = SubResource("SpriteFrames_wxjq1")
-projectile_scene = ExtResource("29_vp1co")
+projectile_scene = ExtResource("33_vp1co")
 walking_range = 9.0
 
 [node name="AnimatedSprite2D" parent="OnTheGround/TargetManager/Thrower" index="0" unique_id=1865971466]
+position = Vector2(0.99999994, -26.000004)
 sprite_frames = SubResource("SpriteFrames_wxjq1")
+
+[node name="ProjectileMarker" parent="OnTheGround/TargetManager/Thrower" index="3" unique_id=60650531]
+position = Vector2(-32, -41)
+
+[node name="CollisionShape2D" parent="OnTheGround/TargetManager/Thrower/HitBox" parent_id_path=PackedInt32Array(1243855514, 1709759726) index="0" unique_id=1491090207]
+position = Vector2(0, -29)
 
 [node name="Targets" type="Node2D" parent="OnTheGround/TargetManager" unique_id=1037194477]
 position = Vector2(-4, 7)
@@ -1360,6 +1370,7 @@ highlight_color = Color(0, 0.4392157, 1, 1)
 
 [node name="Checkpoint" parent="OnTheGround" unique_id=1789892556 instance=ExtResource("35_id6h8")]
 position = Vector2(2531, 1793)
+sprite_frames = ExtResource("38_5yf5h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OnTheGround/Checkpoint" unique_id=976300150]
 shape = SubResource("RectangleShape2D_ssurr")
@@ -1521,6 +1532,10 @@ curve = SubResource("Curve2D_qlr74")
 
 [node name="Guard10" type="Path2D" parent="Patrol_Guards" unique_id=1019254732]
 curve = SubResource("Curve2D_ablag")
+
+[node name="Portal" type="Sprite2D" parent="." unique_id=1491923749]
+position = Vector2(5447, 2819)
+texture = ExtResource("40_5yf5h")
 
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="OnTheGround/CollectibleItem" method="reveal"]
 

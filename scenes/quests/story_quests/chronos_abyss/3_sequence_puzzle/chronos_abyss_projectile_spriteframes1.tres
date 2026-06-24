@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lwce1titpfnm"]
+
+[ext_resource type="Texture2D" uid="uid://wvgxybp0a32s" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/enemies_components/projectile_enemies3.png" id="1_o73mv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o73mv"]
+atlas = ExtResource("1_o73mv")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o73mv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
