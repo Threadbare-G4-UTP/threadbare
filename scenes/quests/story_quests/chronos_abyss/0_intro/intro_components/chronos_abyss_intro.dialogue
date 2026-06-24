@@ -5,13 +5,14 @@
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
 Año 2147.
-Un experimento temporal salió terriblemente mal.
-Una fractura en el tiempo abrió un portal hacia algo que jamás debió existir.
-Lo llaman El Observador.
-Una entidad antigua que ha permanecido oculta durante siglos observando cada civilización.
-Ahora las épocas se mezclan.
-Egipto, el Imperio Inca y el futuro colisionan en una sola realidad.
-Tu misión es recuperar los Núcleos Temporales antes de que el tiempo desaparezca para siempre.
+Científica: Nuestro experimento temporal salió terriblemente mal.
+Científica: Una fractura en el tiempo abrió un portal hacia algo que jamás debió existir.
+Científica: Lo llaman El Observador.
+Científica: Una entidad antigua que ha permanecido oculta durante siglos observando cada civilización.
+Científica: Ahora las épocas se mezclan.
+Científica: Egipto, el Imperio Inca y el futuro colisionan en una sola realidad.
+Científica: Tu misión es recuperar los Núcleos Temporales antes de que el tiempo desaparezca para siempre.
+Científica: Yo seré quien te guíe esta complicada travesía Ethan.
 do animation_player.play(&"walk_off")
-El Observador te está esperando.
+Científica: El Observador te está esperando.
 => END
