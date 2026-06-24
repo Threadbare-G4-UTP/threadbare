@@ -403,7 +403,7 @@ polygon = PackedVector2Array(366, -30, 347, -26, 343, -26, 165, 36, 162, 36, 143
 unique_name_in_owner = true
 position = Vector2(20, -6)
 scale = Vector2(1.4, 1.4)
-sprite_frames = ExtResource("5_mswbt")
+sprite_frames = SubResource("SpriteFrames_lbixc")
 animation = &"walk"
 autoplay = "idle"
 
