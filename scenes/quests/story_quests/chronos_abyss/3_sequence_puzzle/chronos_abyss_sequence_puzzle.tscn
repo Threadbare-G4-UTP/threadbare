@@ -10,8 +10,8 @@
 [ext_resource type="TileSet" uid="uid://k4hi88odhj6y" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_shadows.tres" id="5_jj7sd"]
 [ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="7_krl07"]
 [ext_resource type="PackedScene" uid="uid://b8sok264erfoc" path="res://scenes/game_elements/props/sequence_puzzle_object/sequence_puzzle_object.tscn" id="8_fg5k7"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="9_hqdw7"]
 [ext_resource type="SpriteFrames" uid="uid://dqxi3xlpx3o22" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/chronos_abyss_object.tres" id="9_jjg87"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="9_vp1co"]
 [ext_resource type="AudioStream" uid="uid://cg57q82pb243w" path="res://assets/third_party/nepalese_hand_bells/handBells-c4.ogg" id="10_hbb71"]
 [ext_resource type="AudioStream" uid="uid://b83x8h0ob5mpq" path="res://assets/third_party/nepalese_hand_bells/handBells-d4.ogg" id="11_n72nl"]
 [ext_resource type="AudioStream" uid="uid://cmtiwg2cylmts" path="res://assets/third_party/nepalese_hand_bells/handBells-e4.ogg" id="12_jj7sd"]
@@ -1198,7 +1198,7 @@ y_sort_enabled = true
 
 [node name="Player" parent="OnTheGround" unique_id=747348360 instance=ExtResource("5_dgn1q")]
 position = Vector2(477, 574)
-sprite_frames = ExtResource("9_vp1co")
+sprite_frames = ExtResource("9_hqdw7")
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player" unique_id=1732237457]
 limit_left = -10000
@@ -1383,6 +1383,7 @@ shape = SubResource("RectangleShape2D_ssurr")
 
 [node name="Checkpoint2" parent="OnTheGround" unique_id=1971877044 instance=ExtResource("35_id6h8")]
 position = Vector2(561, 1941)
+sprite_frames = ExtResource("38_5yf5h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OnTheGround/Checkpoint2" unique_id=1550668097]
 position = Vector2(-17, 0)
@@ -1390,6 +1391,7 @@ shape = SubResource("RectangleShape2D_wo8ns")
 
 [node name="Checkpoint3" parent="OnTheGround" unique_id=1303540413 instance=ExtResource("35_id6h8")]
 position = Vector2(3754, 2658)
+sprite_frames = ExtResource("38_5yf5h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OnTheGround/Checkpoint3" unique_id=274005861]
 position = Vector2(1, 0)

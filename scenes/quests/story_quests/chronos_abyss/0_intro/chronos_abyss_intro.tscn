@@ -6,7 +6,6 @@
 [ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/player_components/chronos_abyss_player.tres" id="3_twrdp"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_mh1ik"]
 [ext_resource type="Resource" uid="uid://dkxm5tnc2ybil" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_intro.dialogue" id="5_jrbma"]
-[ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_j0if7"]
 [ext_resource type="SpriteFrames" uid="uid://c5287x8k1bcwl" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_scientist.tres" id="8_twrdp"]
 
 [sub_resource type="Animation" id="Animation_l3rll"]
@@ -154,9 +153,6 @@ dialogue = ExtResource("5_jrbma")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
 next_scene = "uid://bd403017lxfoi"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
-
-[node name="Rock" parent="." unique_id=912112339 instance=ExtResource("6_j0if7")]
-position = Vector2(125, 403)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=785000318]
 position = Vector2(626, 465)

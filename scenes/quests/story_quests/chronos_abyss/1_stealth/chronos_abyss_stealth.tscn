@@ -189,6 +189,7 @@ light_mask = 0
 position = Vector2(-1193, 757)
 sprite_frames = ExtResource("12_477vt")
 animation = &"idle"
+frame_progress = 0.17056325
 
 [node name="Portal" type="Sprite2D" parent="." unique_id=1034416713]
 position = Vector2(285, 1078)
