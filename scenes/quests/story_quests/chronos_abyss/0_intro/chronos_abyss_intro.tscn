@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bx4t1sidgy60c" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/images/laboratoriointro.png" id="1_bhwfp"]
 [ext_resource type="TileSet" uid="uid://nonpg20d7mbj" path="res://scenes/quests/story_quests/chronos_abyss/tiles/chronos_abyss_exterior_floors.tres" id="1_xhyuy"]
 [ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://assets/first_party/templates/intro/NO_EDIT_intro_image.png" id="2_bhwfp"]
-[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/player_components/chronos_abyss_player.tres" id="3_twrdp"]
+[ext_resource type="SpriteFrames" uid="uid://dgmsg0qymsxn1" path="res://scenes/quests/story_quests/chronos_abyss/player_components/chronos_abyss_player.tres" id="3_twrdp"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_mh1ik"]
 [ext_resource type="Resource" uid="uid://dkxm5tnc2ybil" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_intro.dialogue" id="5_jrbma"]
 [ext_resource type="SpriteFrames" uid="uid://c5287x8k1bcwl" path="res://scenes/quests/story_quests/chronos_abyss/0_intro/intro_components/chronos_abyss_scientist.tres" id="8_twrdp"]
@@ -101,8 +101,8 @@ _data = {
 [node name="ChronosAbyssIntro" type="Node2D" unique_id=2049284984]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=486837555]
-position = Vector2(480, 270)
-scale = Vector2(3.8, 3.8)
+position = Vector2(469.50006, 270)
+scale = Vector2(3.9882813, 3.8)
 texture = ExtResource("1_bhwfp")
 
 [node name="TileMapLayers" type="Node2D" parent="." unique_id=591504591]
