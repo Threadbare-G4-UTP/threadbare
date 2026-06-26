@@ -1,6 +1,7 @@
 [gd_resource type="TileSet" format=3 uid="uid://bsi3jo64tjpx"]
 
 [ext_resource type="Texture2D" uid="uid://doc4qg7e3kgs" path="res://assets/third_party/tiny-swords/Terrain/Water/Water.png" id="1_jerb7"]
+[ext_resource type="Texture2D" uid="uid://powb4v4v1rno" path="res://scenes/quests/story_quests/chronos_abyss/3_sequence_puzzle/Texturas de mapa 3/sprite_009.png" id="2_xg84u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xg84u"]
 texture = ExtResource("1_jerb7")
@@ -11,6 +12,13 @@ texture_region_size = Vector2i(64, 64)
 0:0/2 = 2
 0:0/2/physics_layer_2/polygon_0/points = PackedVector2Array(-32, 3.85675, 32, 4.40771, 32, 32, -32, 32)
 0:0/1 = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dtg1r"]
+texture = ExtResource("2_xg84u")
+margins = Vector2i(5, 15)
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
 
 [resource]
 tile_size = Vector2i(64, 64)
@@ -23,3 +31,4 @@ physics_layer_1/collision_mask = 0
 physics_layer_2/collision_layer = 512
 physics_layer_2/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_xg84u")
+sources/2 = SubResource("TileSetAtlasSource_dtg1r")
